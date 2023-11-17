@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hồ Cá CSS3</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-blue-beautiful-aquarium-creature-fish-background-image_193473.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        #background {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+
+        #shark {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            width: 298px;
+            height: 149px; 
+            animation: Shark 10s linear infinite;
+            transform: scaleX(1);
+        }
+
+        @keyframes Shark {
+            0% { left: 100px; top: 200px; }
+            25% { left: 500px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+        #conrua {
+            position: absolute;
+            left: 500px;
+            top: 300px;
+            width: 45px;
+            height: 149px; 
+            animation: Shark 5s linear infinite;
+            transform: scaleX(2);
+        }
+        @keyframes conrua {
+            0% { left: 100px; top: 200px; }
+            25% { top: 650px; top: 200px; }
+            50% { left: 1200px; top: 300px; transform: scaleX(-1); }
+            75% { left: 400px; top: 200px; transform: scaleX(1); }
+            120% { left: 100px; top: 500px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="background">
+    <div id="shark"><img src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-fish-pixel-icon-free-button-png-png-image_4490324.jpg" width="500" height="400" alt="Shark Image"></div>
+    <div id="conrua" ><img src="https://png.pngtree.com/png-vector/20230824/ourmid/pngtree-turtle-character-vector-illustration-illustration-png-image_6915209.png" width="100" height="100" alt="Shark Image"></div>
+</div>
+
+</body>
+</html>
