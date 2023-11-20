@@ -17,10 +17,36 @@
         #background {
             position: relative;
             width: 100%;
-            height: 800px;
+            height: 100vh;
         }
-
-        #shark {
+        
+        #shark
+        {
+            left:100px; top:400px;
+            width: 150px; height: 150px;
+            position: absolute;
+            -webkit-animation-name: Shark;
+            /* Tên animation */
+            -webkit-animation-duration: 10s;
+            /* Thời gian thực hiện animation */
+            -webkit-animation-timing-function: linear;
+            /* kiểu thực hiện animation */
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-play-state: running;	
+            /* trạng thái */
+            -webkit-transform:scaleX(1)
+        }
+        @-webkit-keyframes Shark
+        {
+            0%   {left:100px; top:400px;}
+            1%   {left:100px; top:400px;}
+            20%  {left:700px; top:400px;}
+            40%  {left:700px; -webkit-transform:scaleX(-1);}
+            60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+            90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+            100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+        }
+        #map {
             position: absolute;
             left: 100px;
             top: 200px;
@@ -30,12 +56,28 @@
             transform: scaleX(1);
         }
 
-        @keyframes Shark {
+        @keyframes map{
             0% { left: 100px; top: 200px; }
             25% { left: 500px; top: 200px; }
             50% { left: 900px; top: 200px; transform: scaleX(-1); }
             75% { left: 500px; top: 200px; transform: scaleX(1); }
             100% { left: 100px; top: 200px; }
+        }
+        #cua{
+        position: absolute;
+        bottom: 0px;
+        right: 60%;
+        animation: cua 5s ease-in-out 0s infinite;
+
+        }
+        @keyframes cua{
+            
+            0%{bottom:0px;right:-100px;transform: rotate(20deg);}
+            20%{bottom: 0px;right: 300px;transform: rotate(-20deg);}
+            40%{bottom: 0px;right: 700px;transform: rotate(20deg);}
+            60%{bottom: 0px;right: 1000px;transform: rotate(-360deg);}
+            80%{bottom: 0px;right: 1200px;transform: rotate(0deg);}
+            100%{bottom: 0px;right: 2000px;transform: rotate(0deg);}
         }
         #conrua {
             position: absolute;
@@ -53,13 +95,29 @@
             75% { left: 400px; top: 200px; transform: scaleX(1); }
             120% { left: 100px; top: 500px; }
         }
+        #tholan{
+            left: 100px; top: 400px;
+            position: absolute;
+            animation-name: Tholan;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        @keyframes Tholan{
+            0% { left: 100px; top: 200px;transform: scaleX(1)}
+            25% { left: 500px; top: 200px;}
+            50% { left: 1200px; top: 200px;}
+            95% { left: 100px; top: 200px; transform: scaleX(-1);}
+            100% { left: 100px; top: 200px;  }
+        }
     </style>
 </head>
 <body>
 
 <div id="background">
     <div id="shark"><img src="https://scontent.fsgn8-4.fna.fbcdn.net/v/t1.15752-9/386765776_3373903609566807_885133003769012614_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=sr6_UGzwTqsAX_ZiSpw&_nc_ht=scontent.fsgn8-4.fna&oh=03_AdSlSPRW25O05ns8Yyl6KwC9__1kZwNRfVjdSKB4-FHO0g&oe=657F108F" width="500" height="400" alt="Shark Image"></div>
-    <div id="conrua" ><img src="https://png.pngtree.com/png-vector/20230824/ourmid/pngtree-turtle-character-vector-illustration-illustration-png-image_6915209.png" width="100" height="100" alt="Shark Image"></div>
+    <div id="cua" ><img src="https://png.pngtree.com/png-vector/20230824/ourmid/pngtree-turtle-character-vector-illustration-illustration-png-image_6915209.png" width="100" height="100"></div>
 </div>
 
 </body>
