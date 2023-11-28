@@ -1,0 +1,36 @@
+body {
+    background-color: #282a36;
+    color: #8be9fd;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#app-form {
+    margin-bottom: 20px;
+}
+
+#app-form input[type="text"] {
+    padding: 5px;
+    width: 300px;
+}
+
+#app-form button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#app-list li {
+    margin-bottom: 10px;
+}
+
+#app-list button {
+    margin-left: 10px;
+    color: #ff79c6;
+}
