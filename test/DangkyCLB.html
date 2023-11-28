@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="xuli.js" method="post" enctype="multipart/form-data">
+        <caption>Đăng kí thành viên</caption>
+        <table>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input name="hoten"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td>
+                    <input type="password" name="matkhau"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select name="nghenghiep">
+                        <option value="HSSV">Học sinh sinh viên</option>
+                        <option value="GV" selected>Giảng viên</option>
+                        <option value="BS">Bác sĩ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" value="nam" name="gioitinh"> Nam
+                    <input type="radio" value="nu" name="gioitinh" checked> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td>
+                    <input type="checkbox" value="av" name="ngoaingu">Anh
+                    <input type="checkbox" value="phap" name="ngoaingu">Pháp
+                    <input type="checkbox" value="nhat" name="ngoaingu">Nhật
+                    <input type="checkbox" value="han" name="ngoaingu">Hàn
+
+                </td>
+            </tr>
+            <tr>
+                <td>Hình</td>
+                <td>
+                    <input type="file" name="hinh"/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <textarea row="5" cols="100">
+            
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="Submit">Dang ki</button>
+                    <button type="reset">Nhap lai</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

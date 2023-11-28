@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:valid{
+            border: solid aqua;
+
+        }
+        input:invalid{
+            border: solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="hhh.js" method="post" enctype="multipart/form-data">
+        <h3>DEMO VALIDATION</h3>
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type name="email" maxlength="90" minlength="2">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Tuổi</td>
+                <td>
+                    <input type="number" min="18" max="65">
+                </td>
+            </tr>
+            <tr>
+                <td>Trang wed</td>
+                <td>
+                    <input type="url" pattern="http?://.+">
+                </td>
+            
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <input type="text" pattern="(\+84|0)[9875]\{d8}">
+                </td>
+            </tr>
+            <tr>
+                <td>MÀU</td>
+                <td>
+                    <input type="text" pattern="^#([a-f0-9]{6}|[a-f0-9]{6})$">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <button>SEND</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
