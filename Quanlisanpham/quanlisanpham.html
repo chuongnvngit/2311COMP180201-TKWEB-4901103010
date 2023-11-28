@@ -80,7 +80,7 @@ h1 {
         if (target.classList.contains('edit')) {
             const li = target.closest('li');
             const appName = li.getElementsByTagName('span')[0].innerText;
-            const newAppName = prompt('Nhập tên mới cho ứng dụng', appName);
+            const newAppName = prompt('Nhập tên mới cho sản phẩm', appName);
             if (newAppName) {
                 li.getElementsByTagName('span')[0].innerText = newAppName;
             }
