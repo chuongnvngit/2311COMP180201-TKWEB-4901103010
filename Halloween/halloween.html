@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Halloween Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="halloween.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="fixed-top navbar navbar-expand-lg bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="">Halloween</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold" href="#cards">Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold" href="#gallery">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container d-flex flex-column align-items-center justify-content-center h-100">
+                <h1>Halloween</h1>
+                <div class="fw-bold text-uppercase" id="countdown"></div>
+                <button class="btn-orange mt-5 fw-bold" type="button"> More about halloween</button> 
+                
+               
+                <img class="img-ghost2 img-fluid position-absolute" src="data:image/jpeg;base64,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" alt="ghost2">
+                <img class="img-ghost img-fluid position-absolute" src="data:image/jpeg;base64,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" alt="ghost">
+                
+            </div>
+        </header>
+
+        <section class="second-section bg-black text-light pt-0 pt-lg-5 pb-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <img class="img-fluid w-75" src="https://img.thuthuatphanmem.vn/uploads/2018/10/29/qua-bi-ngo-halloween-dep-va-la_044851809.jpeg" alt="trick-img">
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="second-title">Trick or Treat</h2>
+                        <p class="fs-4 py-5">Lễ hội Halloween ngày nay bắt nguồn từ dân tộc Celt, là một dân tộc sống cách đây hơn 2000 năm trên các vùng đất mà bây giờ là Anh quốc, Ireland và miền Bắc nước Pháp. Dân tộc Celt bắt đầu năm mới vào ngày 1 tháng 11 Dương Lịch.Ngày lễ hội này báo hiệu sự bắt đầu của mùa lạnh, của những ngày tối tăm thường được liên kết với sự tàn tạ và sự chết của loài người. Dân tộc Celt tin rằng Samhain cho phép những linh hồn người chết được trở về nhà trên trần gian vào đêm hôm đó.</p>
+                        <button type="button" class="btn-orange fw-bold">Check for more</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section bg-black text-light p-5" id="cards">
+            <div class="container">
+                <h2 class="second-title text-center mb-5">Happy Halloween</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-5 mb-sm-0">
+                        <div class="card border-0">
+                            <img src="https://cdn.tgdd.vn/Files/2020/10/11/1297965/nguon-goc-va-y-nghia-cua-hinh-anh-qua-bi-ngo-halloween-202010111501197326.jpg" class="card-img-top" alt="">
+                            <div class="card-body bg-black text-light">
+                                <h5 class="card-title fs-3 text-capitalize">Card title</h5>
+                                <p class="card-text">Có lẽ mọi người đều biết quả bí ngô, lồng đèn bí ngô là biểu tượng Halloween, cũng là một phần không thể thiếu trong ngày lễ này. Những chiếc lồng đèn này có tên gọi là “Jack O’Lantern” và tên gọi này liên quan đến một chàng trai xuất hiện từ thế kỷ 18 tại Ireland - nơi khởi nguồn cho sự tích quả bí ngô Halloween.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn-orange fw-bold">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="card border-0">
+                            <img src="https://vietdesigner.net/wp-content/uploads/2011/12/pumkin_halloween3.jpg" class="card-img-top" alt="">
+                            <div class="card-body bg-black text-light">
+                                <h5 class="card-title fs-3 text-capitalize">Card title</h5>
+                                <p class="card-text">Truyền thuyết kể rằng, Jack là một người rất thông minh nhưng lại hà tiện, keo kiệt, nghiện rượu, từng kết bạn với ma quỷ và thường trêu chọc quỷ vương Satan. Một lần, Jack đã mời quỷ vương Satan đi uống rượu, lừa quỷ vương biến thành đồng tiền và bỏ vào túi đựng thánh giá, khiến quỷ vương không thể biến hình trở lại. Sau nhiều lần ra sức van xin, quỷ vương đã được Jack thả ra nhưng kèm theo điều kiện không được quấy phá anh trong vòng một năm và sau khi anh chết đi không được bắt linh hồn của anh.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn-orange fw-bold">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="card border-0">
+                            <img src="https://quangcaosdc.com/wp-content/uploads/2021/10/bi-ngo-halloween.png" class="card-img-top" alt="">
+                            <div class="card-body bg-black text-light">
+                                <h5 class="card-title fs-3 text-capitalize">Card title</h5>
+                                <p class="card-text">Tuy nhiên, sau đó Jack lại lừa quỷ vương leo lên cây táo rồi khắc thánh giá dưới gốc cây kèm theo điều kiện không được quấy phá anh trong mười năm. Khi Jack qua đời, quỷ vương đã thực hiện đúng lời hứa không bắt linh hồn của anh, nhưng linh hồn Jack cũng không được Thượng đế thu nhận vì những việc làm sai trái trước đây, sau đó Jack đã trở thành hồn ma lang thang. Vì thương hại, quỷ vương tặng cho Jack một cục than hồng để soi đường, sau đó anh đã dùng quả bí ngô, khoét rỗng ruột, cho than vào để soi sáng.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn-orange fw-bold">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="card border-0">
+                            <img src="https://wallpaperaccess.com/full/1212164.jpg" class="card-img-top" alt="">
+                            <div class="card-body bg-black text-light">
+                                <h5 class="card-title fs-3 text-capitalize">Card title</h5>
+                                <p class="card-text">Từ đó, hình ảnh quả bí ngô được khoét hình gương mặt cười của Jack trở nên quen thuộc và được tin rằng lồng đèn này sẽ soi đường cho những linh hồn lạc lối. Ngày nay, sự tích Halloween và văn hóa này đã lan rộng khắp mọi nơi, khiến đêm hội Halloween trở nên rực rỡ và ma mị hơn với những người hóa trang thành phù thủy, xác sống, cương thi... kéo theo lồng đèn bí ngô đến nhà xin kẹo với câu nói quen thuộc "trick or treat" (cho kẹo hay bị ghẹo).</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="btn-orange fw-bold">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourth-section bg-black text-light pt-5" id="gallery">
+            <div class="container">
+                <h2 class="second-title text-center mb-5">Halloween gallery</h2>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="py-3">
+                            <img src="https://th.bing.com/th/id/OIP.9IsdjgYJlajxxv2ZHVpnOQHaL-?rs=1&pid=ImgDetMain" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://media.istockphoto.com/id/1168436658/vector/three-halloween-pumpkins-with-moon-on-blue-background.jpg?s=612x612&w=0&k=20&c=kYlROBH6itgj9j77lHxwip8d6yYYCzby-ssm7eDBuv4=" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://i.pinimg.com/originals/aa/bd/50/aabd5098cf5c9c32b417b2a62f752973.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://img.freepik.com/premium-photo/halloween-themed-background_991087-514.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="py-3">
+                            <img src="https://www.wbbjtv.com/content/uploads/2015/10/pic-trickortreat.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://thumbs.dreamstime.com/b/het-branden-onverbiddelijk-halloween-26969356.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://th.bing.com/th/id/OIP.TfUlp4ughxzv--eaomFi2gHaEU?rs=1&pid=ImgDetMain" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://i.pinimg.com/736x/62/3f/f3/623ff353b0f78a1dec607886e395add8.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="py-3">
+                            <img src="https://i.pinimg.com/originals/74/e3/3f/74e33f795ca6aa9928edddb6ad00d478.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://hinhanhdephd.com/wp-content/uploads/2020/10/halloween-21.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://thumbs.dreamstime.com/z/fantasy-scenery-88-10697532.jpg?w=450" class="img-fluid" alt="">
+                        </div>
+                        <div class="py-3">
+                            <img src="https://th.bing.com/th/id/R.0a1d9caf33c04ec553e761e8313aa65d?rik=naYYdcfTqiw0Qg&riu=http%3a%2f%2fclipart-library.com%2fimg%2f1106304.jpg&ehk=BeptmPRlS6LgwKzbk5cT%2bi1ElfHiypvuc4IPlwbC3P0%3d&risl=&pid=ImgRaw&r=0" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black text-white">
+            <p class="m-0 py-3 text-center"><span>Happy Halloween</span> - made by NguyenChuong</p>
+        </footer>
+        
+        <script src="./script.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
