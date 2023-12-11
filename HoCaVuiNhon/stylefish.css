@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+#backgroundimg img{
+width: 100%;
+height: 100vh;
+
+}
+
+#shark
+{
+	left:100px; top:400px;
+	width: 200px; height: 200px;
+	position: absolute;
+	-webkit-animation-name: Shark;
+	/* Tên animation */
+	-webkit-animation-duration: 10s;
+	/* Thời gian thực hiện animation */
+	-webkit-animation-timing-function: linear;
+	/* kiểu thực hiện animation */
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	/* trạng thái */
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Shark
+{
+	0%   {left:100px; top:400px;}
+	1%   {left:100px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+	100% {left:500px; top:400px; -webkit-transform:scaleX(-1);}
+}
+#container{
+position: relative;
+}
+#reu{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+
+}
+#cua{
+position: absolute;
+bottom: 0px;
+right: 50%;
+animation: cua 5s ease-in-out 0s infinite;
+
+}
+@keyframes cua{
+    0%{bottom:0px;right:-100px;transform: rotate(20deg);}
+    20%{bottom: 0px;right: 300px;transform: rotate(-20deg);}
+    40%{bottom: 0px;right: 700px;transform: rotate(20deg);}
+    60%{bottom: 0px;right: 1000px;transform: rotate(-360deg);}
+    80%{bottom: 0px;right: 1200px;transform: rotate(0deg);}
+    100%{bottom: 0px;right: 2000px;transform: rotate(0deg);}
+}
+#bachtuoc{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    animation: bachtuoc 5s ease-in-out 0s infinite;
+}
+@keyframes bachtuoc{
+     0%{top:0px; bottom:-100px;transform: rotate(20deg);}
+    20%{top: 0px;bottom: 300px;transform: rotate(-20deg);}
+    40%{top: 0px;bottom: 700px;transform: rotate(20deg);}
+    60%{top: 0px;bottom: 1000px;transform: rotate(-360deg);}
+    80%{top: 0px;bottom: 1200px;transform: rotate(0deg);}
+   100%{top: 0px;bottom: 2000px;transform: rotate(0deg); }
+}
